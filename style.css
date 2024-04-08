@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+}
+body{
+    background: url(assets/hamburgueria.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.material-symbols-outlined{
+    position: absolute;
+    color: white;
+    top: 20px;
+    left: 85px;
+}
+
+.box-header{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: left;
+    background: black;
+}
+
+.box-main{
+    border: 4px solid #3f3f3f;
+    border-radius: 10px;
+    position: relative;
+    left: 14.6%;
+    top: 15px;
+    width: 85vw;
+    background: #00000065;
+    height: 95vh;
+}
+
+.buttons{
+    outline: none;
+    border: 2px solid #141010;
+    border-radius: 10px;
+    width: 180px;
+    height: 60px;
+    background: #141010;
+    color:white;
+    margin: 0 0 0 10px;
+}
+.buttons:hover{
+    background: #313131e7;
+    border: 1px solid #313131e7;
+
+}
+ul{
+    display: grid;   
+    grid-template-columns: 10px 10px 10px 10px;
+    gap: 30px 220px;
+    margin-left: 10px;
+    display: none;
+}
+img{
+    margin: 5px 0;
+    border-radius: 10px;
+    width: 130px;
+    height: 130px;
+}
+
+li{
+    width: 150px;
+    height: 230px;
+    border: 3px solid  #141010; 
+    border-radius: 10px;
+    position: relative;
+    top: 15px;
+    list-style: none;
+    background: #141010;
+    user-select: none;
+    transition: 200ms;
+}
+li:hover{
+    border: 3px solid  white;
+    transition: 70ms;
+}
+li:active{
+    background: #221d1d;
+}
+p{
+    display: block;
+    height: 20px;
+    color: white;
+}
+.productName{
+    font-size: 23px;
+}
+.ProductValue{
+    font-size: 20px;
+    color:gold
+}
+.ProductValue::before{
+    content: "R$";
+}
+.ProductDesc{
+    display: none;
+}
+.total{
+    margin: 10px 10px ;
+    border: 1px solid #3f3f3f;
+    border-radius: 10px;
+    height: 50px;
+    width: 290px;
+    color:white;
+    visibility: hidden;
+}
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+aside{
+    position: absolute;
+    top: 10px;
+    left: 80%;
+    width: 200px;
+    height: 500px;
+    background-color: #3f3f3f;
+}
+aside img{
+    width: 200px;
+    height: 500px;
+}
