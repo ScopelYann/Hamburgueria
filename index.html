@@ -5,21 +5,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link href="./css/bootstrap.min.css" rel="stylesheet">
     <title>DevBurger</title>
 </head>
 
 <body>
     <header class="box-header">
+
         <span class="material-symbols-outlined" onclick="mudar()">toggle_off</span>
         <button class="foreach buttons" onclick="Show()">ForEach<br>Mostrar Produtos</button>
         <button class="map buttons" onclick="Desconto()">Map<br>Desconto</button>
         <button class="Total buttons" onclick="Soma()">Total<br>Reduce</button>
         <button class="Vegano buttons" onclick="filtrar()">Linha Vegana<br>Filter</button>
+
     </header>
+
     <main class="box-main">
+
         <ul class="container-menu text-center">
             <!-- <li class="text-center elements">
                 <img loading="lazy" src="" style="width: 130px;">
@@ -27,15 +30,26 @@
                 <p class="ProductValue text-left">10</p>
             </li> -->
         </ul>
+
         <section>
+
             <div class="total">
                 <!-- <p id="SomaItens" class="ValueTotal-Itens text-center">dsa</p> -->
             </div>
+
             <aside id="FormSlide">
+
                 <div class="content-Slide">
                     <img src="assets/Cardapio.png" alt="Slides" class="IMG-Slide">
                 </div>
             </aside>
+            
+            <div class="showDescribe">
+                <!-- <img class="img-describe" src="">
+                <h1 class="productName"></h1>
+                <p class="describe"></p>
+                <p class="ingredientes"></p> -->
+            </div>
         </section>
     </main>
 </body>

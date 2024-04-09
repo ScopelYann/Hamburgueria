@@ -24,9 +24,9 @@ function Show() {
     let list = document.querySelector('ul')
     list.style.display = 'grid'
     list.innerHTML = ''
-    let mostrar = menuOptions.forEach((item,index) => {
+    let mostrar = menuOptions.forEach((item, index) => {
         list.innerHTML += `
-        <li>
+        <li onclick="RenderDescribe(${index})">
             <img loading="lazy" src="${item.src}" style="width: 130px;">
             <p class="productName text-left">${item.name}</p>
             <p class="ProductValue text-left">${item.price.toFixed(2)}</p>
@@ -64,27 +64,27 @@ function ocultarSoma() {
     return sum.style.visibility = 'hidden';
 }
 
-function filtrar(){
+function filtrar() {
     ocultarSoma()
     let list = document.querySelector('ul')
     list.style.display = 'grid'
     list.innerHTML = ''
     const result = menuOptions.filter((item) => item.vegan == true)
-    .forEach((element, index) => {
-        list.innerHTML += `
+        .forEach((element, index) => {
+            list.innerHTML += `
         <li>
             <img loading="lazy" src="${element.src}" style="width: 130px;">
             <p class="productName text-left">${element.name}</p>
             <p class="ProductValue text-left">${element.price.toFixed(2)}</p>
         </li>
         `
-        let name = document.querySelectorAll('.productName')[index]
-        if (name.textContent.length > 13 && name.textContent.length < 20) {
-            name.style.fontSize = '20px'
-            name.style.height = '40px'
-        }
-        console.log(element)
-    });
-    
+            let name = document.querySelectorAll('.productName')[index]
+            if (name.textContent.length > 13 && name.textContent.length < 20) {
+                name.style.fontSize = '20px'
+                name.style.height = '40px'
+            }
+            console.log(element)
+        });
+
     return result
 }

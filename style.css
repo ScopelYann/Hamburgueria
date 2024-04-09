@@ -113,6 +113,54 @@ p{
     color:white;
     visibility: hidden;
 }
+.showDescribe{
+    position: absolute;
+    top: 5px;
+    left: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    background: #3f3f3f;
+    width: 300px;
+    height: 600px;
+    border: 3px solid gold;
+    text-align: center;
+    border-radius: 20px;
+    z-index: 2;
+    display: none;
+}
+.describe::first-line{
+    color: gold;
+}
+.img-describe{
+    width: 250px;
+    height: 170px;
+}
+.ingredientes{
+    position: relative;
+    top:65px;
+}
+.ingredientes::first-line{
+    color: gold;
+}
+.vegano{
+    position: relative;
+    top: 155px;
+}
+.vegano::before{
+    color: gold;
+    content: 'Vegano: ';
+}
+.c{
+    position: relative;
+    left:135px;
+    bottom: 200px;
+    cursor: pointer;
+}
+.productNome{
+    color: white;
+}
 section{
     display: flex;
     justify-content: center;
